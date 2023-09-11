@@ -1,0 +1,13 @@
+-- ROCKBUSTER film table non-numeric columns summaries						
+SELECT						
+MODE() WITHIN GROUP (ORDER BY film_id) AS film_id_modal_value,						
+MODE() WITHIN GROUP (ORDER BY title) AS title_modal_value,						
+MODE() WITHIN GROUP (ORDER BY description) AS description_modal_value,						
+MODE() WITHIN GROUP (ORDER BY release_year) AS release_year_modal_value,						
+MODE() WITHIN GROUP (ORDER BY language_id) AS language_id_modal_value,						
+MODE() WITHIN GROUP (ORDER BY rating) AS rating_modal_value,						
+MODE() WITHIN GROUP (ORDER BY last_update) AS last_update_modal_value,						
+MODE() WITHIN GROUP (ORDER BY special_features) AS special_features_modal_value,						
+MODE() WITHIN GROUP (ORDER BY fulltext) AS fulltext_modal_value						
+FROM film						
+						
